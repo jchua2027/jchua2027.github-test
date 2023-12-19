@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+        
+    <style>
+        body {
+            background-image: url(hogwarts.png);
+            margin: 0;
+            padding: 0;
+
+            background-size: 2000px 1000px;
+
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 80px auto 0; 
+            padding: 15px;
+            color: white;
+        }
+        .col-sm-3 img {
+            display:flex;
+
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .border {
+            width: auto;
+        }
+
+        .container img {
+            background-color: black;
+        }
+        header {
+            background-color: #0F1A25;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000; 
+            padding: 10px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .header-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        a:hover, a:active {
+            color: #ffcc00;
+        }
+        .nav-item {
+            padding: 1px;
+            font-family: 'Lora', cursive;
+            border-width: 1px;
+            border-style: solid;
+            border-color: white;
+        }
+        h3, h2 {
+            font-family: 'Lora', cursive;
+            background-color: black;
+            margin-bottom: 2px;
+			text-align: center;
+            color: white;
+        }
+        h2 {
+            text-align: center;
+        }
+        @media only screen and (max-width:1600px) {
+            body {
+                background-size: 1850px 1750px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            p {
+                font-size: 16px;
+            }
+
+            table {
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width:775px) {
+            .header-links {
+                width: 80%;
+                padding: 0;
+            }
+            .container {
+                width: 100%;
+            }
+            body {
+                background-size: 1850px 1750px;
+            }
+        }
+        @media only screen and (max-width:500px) {
+            .header-links, .container, .col-sm-3 img {
+                width: 100%;
+                max-width: 200%;
+
+            }
+            body {
+                background-position: -650px -0px;
+                background-size: 2500px 3300px;
+            }
+        }
+		.houses-title, .teachers-title, .history-title {
+          text-align: center;
+          font-size: 3rem;
+          margin-bottom: 1rem;
+		  margin-top: 5rem;
+		  font-family: 'Lora', cursive;
+		  color: white;
+        }
+		.parallax {
+			background-image: url("hogwarts.png");
+			vertical-align: bottom;
+			min-height: 500px;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover; 
+			display: flex;
+			margin: 0;
+			width: 1600px;
+			height: 900px;
+			line-height: 0%;
+}			
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Content for your header goes here -->
+    <div class="row">
+        <div class="col-xl-">
+        <img class="hogwarts-text-1" src="hogwartslogo.png" height="150" width="120" alt="">
+		<img class="hogwarts-text-1" src="About.png" height="500" width="500" alt="">
+        </div>
+    </div>
+        <nav class="header-links navbar-expand-sm">
+            <ul class="navbar-nav">
+            <li class="nav-item"><a href="Home.html">Home</a></li>
+			<li class="nav-item"><a href="About.html">About</a></li>
+            <li class="nav-item"><a href="Academics.html">Academics</a></li>
+            <li class="nav-item"><a href="Extra-Curriculars.html">Extra-Curriculars</a></li>
+			<li class="nav-item"><a href="Contacts.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="container">
+        <!-- Your page content goes here -->
+        <br><br><br><br><br><br>
+        <div class="row center">
+		<!-- If you're wondering why theres so much %20s, it's to avoid an 'illegal character' error in the img srcs-->
+        <h2 class="houses-title">Houses</h2>
+		<div class="col-sm-3">
+            <div class="border border-4">
+                <img src="5.png" height="300" width="300" alt="">
+                <img src="Gryffindor.png" alt="" height="100" width="300">
+                    <h3>
+                    "You might belong in Gryffindor,<br>
+                    Where dwell the brave at heart,<br>
+                    Their daring, nerve, and chivalry <br>
+                    Set Gryffindors apart"
+                    </h3>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="border border-4">
+                <img src="4.png" height="300" width="300" alt="">
+                <img src="Hufflepuff.png" alt="" height="100" width="300">
+                <h3>
+                    "You might belong in Hufflepuff,<br>
+                    Where they are just and loyal, <br>
+                    Those patient Hufflepuffs are true,<br>
+                    And unafraid of toil."</h3>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="border border-4">
+                <img src="2.png" height="300" width="300" alt="">
+                <img src="Ravenclaw.png" alt="" height="100" width="300">
+                <h3>
+                    "Or yet in wise old Ravenclaw,<br>
+                    If you've a ready mind,<br>
+                    Where those of wit and learning,<br>
+                    Will always find their kind." <br>
+                    </h3>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="border border-4">
+                <img src="3.png" height="300" width="300" alt="">
+                <img src="Slytherin.png" alt="" height="100" width="300">
+                <h3>
+                    "Or perhaps in Slytherin,<br>
+                    You'll make your real friends, <br>
+                    Those cunning folk use any means, <br>
+                    To achieve their ends."</h3>
+            </div>
+        </div>
+    </div>
+<div class="row center">
+    <h2 class="teachers-title">Well Known Teachers</h2>
+    <div class="col-sm-6">
+        <div class="border border-4">
+            <img src="Rubeushagrid.PNG.webp" width="570" alt="">
+            <h2>Rubeus Hagrid</h2>
+                <h3>
+                Professor of the subject Care of Magical Creatures
+                </h3>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="border border-4">
+            <img src="Albus_Dumbledore_29_3.webp" width="570" alt="">
+            <h2>Albus Dumbeldore</h2>
+                <h3>
+                Professor of the subject Defense Against the Dark Arts
+                </h3>
+        </div>
+    </div>
+</div>
+<div class="row center">
+    <div class="col-sm-6">
+        <div class="border border-4">
+            <img src="Severus_Snape.webp" width="570" alt="">
+            <h2>Severus Snape</h2>
+                <h3>
+                Professor of the subject Potion Making
+                </h3>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="border border-4">
+            <img src="ProfessorMcGonagall-HBP.webp" width="570" alt="">
+            <h2>Minerva McGonagall</h2>
+                <h3>
+                Professor of the subject Transfiguration
+                </h3>
+        </div>
+    </div>
+</div>
+<div class="row center">
+    <h2 class="history-title">History</h2>
+    <div class="col-md">
+        <div class="border border-4">
+            <img src="hogwartsimg.jpg" alt="">
+            <h2>Founding days</h2>
+                <h3>
+                    In the 10'th century, four powerful wizards and witches created Hogwarts Academy. These 4 founders are Godric Gryffindor, Helga Hufflepuff, Rowena Ravenclaw and Salazar Slytherin.
+                </h3>
+        </div>
+    </div>
+</div>
+<div class="row center">
+    <div class="col-sm-6">
+        <div class="border border-4">
+            <img src="astronomy%20tower.png" alt="">
+            <h2>Many years later...</h2>
+                <h3>
+                At some point, pressure from Slytherin to only admit pure-blooded wizards started to greatly affect the other founders.
+                </h3>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="border border-4">
+            <img src="Harry-potter1-voldemort.webp" alt="">
+            <h2>Links to Lord Voldemort</h2>
+                <h3>
+                Later on, each of the founders would be linked with Lord Voldemort in some way due to him using things that belong to the founders for his Horcruxes.
+                </h3>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
